@@ -4,6 +4,7 @@
     list-style: none;
 }
 .container {
+    position: relative;
     width: 1280px;
     height: inherit;
     background: rgba(0,0,0,0.3);
@@ -42,40 +43,100 @@
     color: #969696;
     margin-right: 2px;
 }
-/* 로고 */
-#header_logo {
-    width: 100%;
-    height: 70px;
+/* 메인 헤더 */
+#main_header {
+    height: 60px;
     background: skyblue;
 }
-#header_logo .logo {
-    text-align: left;
-    padding: 5px 10px;
-    position: relative;
+#main_header .logo {
+    font-size: 26px;
+    text-transform: uppercase;
 }
-#header_logo .logo h3 {
-    display: inline-block;
-}
-#header_logo .logo .logo_tit {
-    font-size: 28px;
-    font-weight: 700;
-    font-family:"Malgun Gothic", serif;
-}
-#header_logo .logo .logo_icon {
+#main_header .logo h3{}
+#main_header .logo_icon {
     position: absolute;
-    top: 10px;
-    left: 11%;
+    top: 0;
+    left: 12%;
+    font-size: 28px;
 }
-/* 검색 */
-#header_logo .search {
-    text-align: c;
+#main_header .logo_icon span {
+
 }
-#header_logo .search input {
+#main_header .search {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    padding-top: 5px;
+}
+#main_header .search input {
     width: 400px;
     height: 40px;
-    padding-left: 14px;
     outline: none;
+    font-size: 16px;
 }
-#header_logo .search input:focus {
-    border: 2px solid red;
+#main_header .search input:focus {
+    placeholder
+}
+#main_header .search i {
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
+.upmenu {
+    width: 190px;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 72%;
+    font-size: 14px;
+    padding-top: 16px;
+}
+.upmenu ul {
+    /* background: blue; */
+}
+.upmenu ul li {}
+#main_header .icon {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+#main_header .icon > ul {
+}
+#main_header .icon > ul > li {
+    display: inline-block;
+    padding:10px 7px;
+}
+#main_header .icon ul li:last-child {
+    margin-right: 5px;
+}
+#main_header .icon > ul > li span {}
+#main_header .icon > ul > li span i {
+    font-size: 18px;
+    padding-top: 5px;
+}
+/* 메뉴들 */
+#header_menus {
+    height: 40px;
+    background: greenyellow;
+}
+#header_menus .menu {
+    display: flex;
+    justify-content: space-between;
+}
+#header_menus .sub_menu {
+    
+}
+#header_menus .sub_menu li {
+    float: left;
+    padding: 6px 15px;
+}
+#header_menus .main_menu {
+    text-align: right;
+}
+#header_menus .main_menu li {
+    float: left;
+    padding: 6px 15px;
 }
