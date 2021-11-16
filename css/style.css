@@ -129,14 +129,22 @@
 #header_menus .sub_menu {
     
 }
-#header_menus .sub_menu li {
+#header_menus .sub_menu  li {
     float: left;
-    padding: 6px 15px;
+    padding: 6px 0px;
+}
+#header_menus .sub_menu  li  img {
+    width: 90px;
+    height: 30px;
+    padding:0px 5px;
+
 }
 #header_menus .main_menu {
     text-align: right;
+    font-size: 12px;
+    font-weight: 700;
 }
 #header_menus .main_menu li {
     float: left;
-    padding: 6px 15px;
+    padding: 6px 4px;
 }
