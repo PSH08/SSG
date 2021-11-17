@@ -129,15 +129,19 @@ header {
     justify-content: space-between;
 }
 #header_menus .sub_menu {
-    
+    position: relative;
+    overflow: hidden;
+}
+#header_menus .sub_menu:hover {
+    overflow: visible;
 }
 #header_menus .sub_menu  li {
     float: left;
     padding: 6px 0px;
 }
 #header_menus .sub_menu  li  img {
-    width: 90px;
-    height: 30px;
+    width: 70px;
+    height: 25px;
     padding:0px 5px;
 
 }
@@ -153,4 +157,23 @@ header {
 }
 #header_menus .main_menu li:hover {
     color: #2dc349;
+}
+/* 서브메뉴 드롭다운 */
+#header_menus .menu ul.sub_menu .drop_menus {
+    display: flex;
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    background: #999;
+    padding: 15px;
+}
+#header_menus .menu ul.sub_menu .drop_menus ul {
+}
+#header_menus .menu ul.sub_menu .drop_menus ul li {
+    padding: 12px;
+    font-size: 12px;
+}
+#header_menus .menu ul.sub_menu .drop_menus ul li a {
+    color: #fff;
+    text-decoration: none;
 }
