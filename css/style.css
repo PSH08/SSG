@@ -7,19 +7,23 @@
     position: relative;
     width: 1280px;
     height: inherit;
-    background: rgba(0,0,0,0.3);
+    /* background: rgba(0,0,0,0.3); */
     margin: 0 auto;
+    z-index: 300;
+}
+header {
+    background: rgba(255, 248, 248, 0.753);
 }
 #header {
     width: 100%;
     height: 20px;
-    background: red;
+    /* background: red; */
 }
 /* 헤더 로그인 */
 #header .login {
     overflow: hidden;
     height: 20px;
-    background: yellow;
+    /* background: yellow; */
 }
 #header .login ul {
     float: right;
@@ -46,7 +50,7 @@
 /* 메인 헤더 */
 #main_header {
     height: 60px;
-    background: skyblue;
+    /* background: skyblue; */
 }
 #main_header .logo {
     font-size: 26px;
@@ -74,9 +78,7 @@
     outline: none;
     font-size: 16px;
 }
-#main_header .search input:focus {
-    placeholder
-}
+
 #main_header .search i {
     font-size: 22px;
     position: absolute;
@@ -120,23 +122,58 @@
 /* 메뉴들 */
 #header_menus {
     height: 40px;
-    background: greenyellow;
+    /* background: greenyellow; */
 }
 #header_menus .menu {
     display: flex;
     justify-content: space-between;
 }
 #header_menus .sub_menu {
-    
+    position: relative;
+    overflow: hidden;
 }
-#header_menus .sub_menu li {
+#header_menus .sub_menu:hover {
+    overflow: visible;
+}
+#header_menus .sub_menu  li {
     float: left;
-    padding: 6px 15px;
+    padding: 6px 0px;
+}
+#header_menus .sub_menu  li  img {
+    width: 70px;
+    height: 25px;
+    padding:0px 5px;
+
 }
 #header_menus .main_menu {
     text-align: right;
+    font-size: 12px;
+    font-weight: 700;
 }
 #header_menus .main_menu li {
     float: left;
-    padding: 6px 15px;
+    padding: 6px 4px;
+    cursor: pointer;
+}
+#header_menus .main_menu li:hover {
+    color: #2dc349;
+}
+/* 서브메뉴 드롭다운 */
+#header_menus .menu ul.sub_menu .drop_menus {
+    display: flex;
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    background: #999;
+    padding: 15px;
+}
+#header_menus .menu ul.sub_menu .drop_menus ul {
+}
+#header_menus .menu ul.sub_menu .drop_menus ul li {
+    padding: 12px;
+    font-size: 12px;
+}
+#header_menus .menu ul.sub_menu .drop_menus ul li a {
+    color: #fff;
+    text-decoration: none;
 }
